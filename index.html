@@ -18,29 +18,19 @@
         <section class="form-section">
             <fieldset>
                 <form action="" class="form">
-                    <input type="text" placeholder="Nome do Produto">
-                    <input type="text" placeholder="Preço do Produto">
-                    <button onclick="getProductValues()">Enviar</button>
+                    <input type="text" autocomplete="off" placeholder="Nome do Produto" id="name">
+                    <input type="text" autocomplete="off" placeholder="Preço do Produto" id="price">
+                    <button type="submit" id="submit">Enviar</button>
                 </form>
             </fieldset>
         </section>
 
         <section class="products-section">
-            <ul class="products-list">
-                <li>ITEM 1</li>
-                <li>ITEM 2</li>
-                <li>ITEM 3</li>
-                <li>ITEM 4</li>
-                <li>ITEM 5</li>
-            </ul>
+            <ul class="products-list"></ul>
         </section>
     </main>
-    <footer class="footer">
-        <a href="https://github.com/WeltonSantosFr">Git Hub</a>
-    </footer>
     
-
-
+    <script src="bdd.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

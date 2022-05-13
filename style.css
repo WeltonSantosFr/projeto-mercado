@@ -122,12 +122,35 @@ body {
 .products-section {
 	height: 50%;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .products-list {
 	height: 100%;
-	width: 100%;
+	width: 80%;
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
+}
+
+.products-item {
+	height: 100px;
+	width: 200px;
+	border: solid 1px #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.products-item p {
+	font-weight: 600;
+	font-size: larger;
+}
+
+.products-item strong {
+	font-weight: 800;
+	font-size: larger;
 }
